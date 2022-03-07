@@ -4,13 +4,148 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Document</title>
     <style></style>
 </head>
 <body>
-    <header>
-        
+    
+    <header class="header-container  flex-row">
+        <div class="header-logo"><img src="assets/images/circle.svg" alt="circle-header-logo"></div>
+        <nav class="flex-row">
+            <a href="" class="header-link" >Home</a>
+            <a href="" class="header-link" >Projects</a>
+            <a href="" class="header-link" >Services</a>
+        </nav>
+        <button class="header-btn btn">Contact Us</button>
     </header>
+
+    <div class="body-container">
+        <div class="hero-container">
+            <div class="hero-left" >
+                <div class="hl-top-container flex-column">
+                    <h2 class="hero-title">Empower Your Business With Stunning Design!</h2>
+                    <p class="hero-text">Circle is a digital design and development studio.<br>We design and develop astonishing websites<br> and mobile apps.</p>
+                </div>
+
+                <div class="hl-bot-container flex-row">
+                    <button class="touch-btn btn">Get in touch</button>
+                    <button class="work-btn btn-secondary">See our work</button>
+                </div>
+            </div>
+
+
+            <div class="hero-rigth">
+                <div class="hero-img-container">
+                    <img src="assets/images/hero-image.png" class="hero-img" alt="happy freelancer with yellow background">
+                    <img src="assets/images/card-1.png" class="hero-card-top hero-card"alt="">
+                    <img src="assets/images/card-2.png" class="hero-card-bot hero-card" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="client-container flex-row">
+            <div><img src="assets/images/airbnb-logo.svg" alt="airbnb logo"></div>
+            <div><img src="assets/images/google-logo.svg" alt="google logo"></div>
+            <div><img src="assets/images/microsoft-logo.svg" alt="microsoft logo"></div>
+            <div><img src="assets/images/fedex-logo.svg" alt="fedex logo "></div>
+            <div><img src="assets/images/amazon-logo.svg" alt="amazon logo"></div>
+        </div>
+
+        <div class="projects-container">
+            <div class="projects-title-container"><h3></h3></div>
+            <div class="projects-container" >
+                <div class="project-card"></div>
+                <div class="project-card"></div>
+                <div class="project-card"></div>
+            </div>
+        </div>
+    
+
+        <div class="testimonial-container flex-column" >
+
+            <div class="testimonial-top-row flex-row">
+                <img src="assets/images/memoji-1.png" class="emoji" alt="blonde emoji">
+                <h3>Hear What Our Clients Have to Say</h3>
+                <img src="assets/images/memoji-2.png" class="emoji" alt="cap emoji">
+            </div>
+
+            <div class="testimonial-mid-row">
+                <p class="content-toCenter">
+                    “Circle helped us through every stage of our startup.<br> We really enjoyed working with you.”
+                </p>
+            </div>
+
+            <div class="testimonial-bot-row flex-row">
+                <img src="assets/images/memoji-3.png" class="emoji" alt="beard emoji">
+                <div class="testiominal-user-container flex-row">
+                    <img src="assets/images/profile.png" class="testimonial-profile-img" alt="">
+                    <div>
+                        <p class="testimonial-profile-name">Kristin Watson</p>
+                        <p class="testimonial-profile-job">Booking.com</p>
+                    </div>
+                </div>
+                <img src="assets/images/memoji-4.png" class="emoji" alt="emoji playing party horn">
+            </div>
+
+        </div>
+
+        <div class="services-container flex-column">
+            <div class="services-title-container"><h3>Our Services</h3></div>
+            <div class="services-card-container flex-row" >
+                <div class="services-card flex-column">
+                    <div><img src="assets/images/1.svg" alt="la punta de la cosa que pinta"></div>
+                    <h5>User Interface Design</h5>
+                    <p>Circle provides you with a stunning user interface design that is accessible to everyone.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div class="services-card flex-column">
+                    <div><img src="assets/images/2.svg" alt="la punta de la cosa que pinta"></div>
+                    <h5>User Interface Design</h5>
+                    <p>Circle provides you with a stunning user interface design that is accessible to everyone.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div class="services-card flex-column">
+                    <div><img src="assets/images/3.svg" alt="la punta de la cosa que pinta"></div>
+                    <h5>User Interface Design</h5>
+                    <p>Circle provides you with a stunning user interface design that is accessible to everyone.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="cti-container">
+            <div class="cti-title-container content-toCenter flex-column">
+                <h3 class="cti-title">Do you have any questions?</h3>
+                <p class="cti-subtitle">Let us help you!</p>
+            </div>
+
+            <div class="cti-contact-container  flex-row content-toCenter">
+                <div class="cti-input-container">
+                    <input class="cti-email-input" type="text" placeholder="Enter your email">
+                </div>
+                <button class="cti-btn">Suscribe</button>
+ 
+            </div>
+   
+        </div>
+
+    </div>
+
+    <footer class="footer-container">
+        <div class="footer-logo"><img src="assets/images/circle.svg" alt=""></div>
+        <div class="footer-links-container">
+            <ul>
+                <li class="footer-links"></li>
+                <li class="footer-links"></li>
+                <li class="footer-links"></li>
+                <li class="footer-links"></li>
+                <li class="footer-links"></li>
+                <li class="footer-links"></li>
+            </ul>
+        </div>
+    </footer>
+
+
 </body>
 </html>

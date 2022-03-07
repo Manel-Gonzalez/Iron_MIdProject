@@ -1,4 +1,332 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
 *{
     margin: 0px;
     padding: 0px;
+    font-family: "Roboto";
+
 }
+body{
+    background-color: #F4F6FC;
+}
+
+.btn{
+
+    background: linear-gradient(225deg, #F4F6FC, #F4F6FC);
+    box-shadow: 
+    2px 2px 24px rgba(0, 0, 0, 0.08),
+    -2px -2px 24px rgba(0, 0, 0, 0.08);
+    font-weight: 500;
+
+    border-radius: 10px;
+    border: none;
+
+    width: 150px;
+    height: 52px;
+}
+
+.btn-secondary{
+    background: rgb(244, 246, 252);
+    color: #6B708D;
+    border-radius: 2px;
+    border: none;
+    font-weight: 500;
+
+/*     background: linear-gradient(75deg, #F4F6FC, #F4F6FC);
+    box-shadow: inset 4px 4px 10px rgba(0, 0, 0, 0.05),
+                inset -4px -4px 10px rgba(0, 0, 0, 0.05); */
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+}
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.content-toCenter{
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+
+}
+
+/* ---------HEADER SECTION-------------- */
+
+    .header-container{
+        justify-content: space-between;
+        align-items: flex-end;
+        padding: 20px 20px 20px 20px;
+        height: 40px;
+    }
+
+    .header-link{
+        margin: 0 30px 0 30px;
+        text-decoration: none;
+        color: #6B708D;
+        font-weight: 500;
+        font-size: 18px;
+    }
+
+    .header-btn{
+        justify-content: center;
+        align-items: center;
+
+    }
+
+/* --------------------BODY SECTION-------------------- */
+    .body-container{
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+
+    @media screen and (max-device-width:468px) {
+        .header-container{
+            flex-wrap: wrap;
+        }
+        .hero-container{
+            flex-wrap: wrap;
+        }
+        .hero-rigth{
+            width: 400px;
+        }
+    }
+
+
+
+/* ----------------HERO SECTION-------------- */
+
+        
+    .hero-container {
+        margin-top: 100px;
+        padding: 0 3% 0 3%;
+        display: flex;
+        flex-direction: row;
+
+
+    }
+
+    .hero-left{
+        justify-content: center;
+        align-self: center;
+        width: auto 40%;
+
+
+    }
+    .hero-rigth{
+        width: auto 50.4%;
+
+    }
+
+    .hero-img-container{
+        position: relative;
+    }
+
+    .hero-img{
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .hero-title{
+        font-size: 60px;
+        font-weight: 700;
+        font-style: normal;
+    }
+    .hero-text{
+        font-size: 20px;
+        line-height: 30px;
+        font-weight: 400;
+        margin-top: 30px;
+        margin-bottom: 40px;
+    }
+
+    .work-btn{
+        margin-left: 40px;
+    }
+
+    .hero-card{
+
+        position: relative;
+    }
+    .hero-card-top{
+        position: absolute;
+        background-color: transparent;
+        top: 0;
+        width: 60%;
+        left: 0;
+
+    }
+    .hero-card-bot{
+        position: absolute;
+        background-color: transparent;
+        bottom: 0;
+        right: 0;
+        width: 60%;;
+
+
+    }
+
+/* ----------------CLIENT SECTION-------------- */
+
+    .client-container{
+        margin-top: 163px;
+        padding: 0 3% 0 3%;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+
+/* ----------------TESTIMONIAL SECTION-------------- */
+    .testimonial-container{
+        background-color: #292E47;
+        background-image: url("assets/images/orbit.png");
+        background-size: 110vw;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-top: 100px;
+
+
+    }
+
+    .testimonial-top-row{
+        justify-content: space-between;
+        align-items: center;
+        margin: 120px 91px 104px 91px;
+
+    }
+    .testimonial-top-row h3{
+        color:#F4F6FC;
+        font-size: 40px;
+        font-weight: 700;
+
+    }
+
+    .testimonial-mid-row{
+        justify-content: space-between;
+        color: #FFC600;
+        margin-bottom: 104px;
+        font-size: 24px;
+        font-weight: 500;
+    }
+    .testimonial-bot-row{
+        justify-content: space-between;
+        margin: 0 91px 120px 91px;
+    }
+
+    .emoji{
+        width: 100px;
+        height: 100px;
+        background-color: transparent;
+    }
+
+    .testimonial-profile-img{
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
+        margin-right: 10px;
+    }
+    .testiominal-user-container{
+        align-items: center;
+    }
+    .testimonial-profile-job{
+        color:#F4F6FC;
+    }
+
+    .testimonial-profile-name{
+        color: #A2D6F9;
+    }
+
+
+/* ---------------- SERVICES SECTION-------------- */
+    .services-container{
+
+        margin:  100px 0 100px 0;
+        padding: 0 3% 0 3%;
+    }
+
+    .services-card-container{
+        justify-content: space-between;
+    }    
+        
+    .services-card{
+        background-color: white;
+        width: auto;
+        margin-left: 20px;
+        padding: 40px 30px 30px 30px;
+    }
+    .services-card:first-child{
+        margin-left: 0px;
+    }
+
+
+    .services-card div{
+        width: 45px;
+        height: 45px;
+        text-align: center;
+        background-color: #ECF7FF;
+        border-radius: 25px;
+        position: relative;
+
+        
+    }
+
+    .services-card p{
+        margin: 20px 0 20px 0 ;
+    }
+    .services-card h5{
+        margin: 20px 0 0 0 ;
+    }
+    .services-card img{
+        width: 35px;
+        height: 35px;
+        margin: 5px 0 0 5px;
+
+    }
+
+
+
+/* ----------------TESTIMONIAL SECTION-------------- */
+
+    .cti-container{
+        background-color: #FFC600;
+        height: 300px;
+    }
+
+    .cti-email-input{
+        background: url("assets/images/mail.svg");
+        background-color: white;
+        background-repeat: no-repeat;
+        background-position: 3% 50%;
+        padding-left: 40px;
+        height: 40px;
+        border: none;
+    }
+
+    .cti-contact-container{
+        margin-top: 30px;
+    }
+    .cti-title{
+        margin-top: 70px;
+        margin-bottom: 20px;
+    
+    }
+
+    .cti-btn{
+        margin-left: 20px;
+        border: none;
+        width: 100px;
+
+        background: linear-gradient(225deg, rgb(255, 198, 0), #FFC600);
+        box-shadow: 
+        2px 2px 10px rgba(0, 0, 0, 0.18),
+        -2px -2px 10px rgba(0, 0, 0, 0.18);
+        font-weight: 500;
+    
+        border-radius: 10px;
+    
+
+ 
+    }
