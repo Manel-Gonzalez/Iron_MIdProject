@@ -32,8 +32,10 @@ body{
     border-radius: 2px;
     border: none;
     font-weight: 500;
+/*     width: 100px;
+    border-radius: 10px;
 
-/*     background: linear-gradient(75deg, #F4F6FC, #F4F6FC);
+    background: linear-gradient(75deg, #F4F6FC, #F4F6FC);
     box-shadow: inset 4px 4px 10px rgba(0, 0, 0, 0.05),
                 inset -4px -4px 10px rgba(0, 0, 0, 0.05); */
 }
@@ -41,6 +43,7 @@ body{
 .flex-row{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 .flex-column{
     display: flex;
@@ -93,6 +96,13 @@ body{
         .hero-rigth{
             width: 400px;
         }
+ 
+    }
+
+    @media screen and (min-device-width:770px){
+        .services-card-container{
+            justify-content:space-between;
+        }   
     }
 
 
@@ -248,14 +258,13 @@ body{
     }
 
     .services-card-container{
-        justify-content: space-between;
     }    
         
     .services-card{
         background-color: white;
-        width: auto;
-        margin-left: 20px;
+        width: 20vw;
         padding: 40px 30px 30px 30px;
+        margin-left: 8px;
     }
     .services-card:first-child{
         margin-left: 0px;
@@ -329,4 +338,32 @@ body{
     
 
  
+    }
+
+/* ----------------TESTIMONIAL SECTION-------------- */
+    footer{
+        padding: 20px 20px 20px 20px;
+    }
+    .footer-container{
+        justify-content: space-between;
+        margin-top: 100px;
+    }
+    .footer-logo img{
+        margin-bottom: 20px;
+    }
+    .footer-logo address{  
+        line-height: 1.5rem;
+    }
+    .footer-links-container{
+        align-self: flex-end;
+    }
+    .footer-links-container ul{
+        gap: 30px 10px;
+        flex-wrap: wrap;
+        width: 250px;
+        list-style-type: none;
+    }
+
+    .footer-links{
+        margin: 0 5px 0 5px;
     }
