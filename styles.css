@@ -56,13 +56,46 @@ body{
     text-align: center;
 
 }
+.xlarge-text{
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 70px;
+}
+
+.large-text{
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 47px;
+}
+.largeMedium-text{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+}
+.medium-text{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    
+}
+.small-text{
+    line-height: 17px;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.xsmall-text{
+    line-height: 15px;
+    font-size: 13px;
+    font-weight: 400;
+}
 
 /* ---------HEADER SECTION-------------- */
 
     .header-container{
         justify-content: space-between;
         align-items: flex-end;
-        padding: 20px 20px 20px 20px;
+        padding: 70px 30px 0px 30px;
         height: 40px;
     }
 
@@ -82,13 +115,25 @@ body{
 
 /* --------------------BODY SECTION-------------------- */
     .body-container{
-        padding-left: 3%;
-        padding-right: 3%;
+        padding-left: 2%;
+        padding-right: 2%;
     }
 
+    @media screen and (min-device-width:767px){
+        .services-card-container{
+            justify-content:space-between;
+        }   
+        .footer-links-container ul {
+            gap: 60px 106px; 
+        }
+    }
     @media screen and (max-device-width:468px) {
         .header-container{
             flex-wrap: wrap;
+        }
+        header nav{
+            flex-direction: column;
+            justify-content: flex-start;
         }
         .hero-container{
             flex-wrap: wrap;
@@ -96,14 +141,22 @@ body{
         .hero-rigth{
             width: 400px;
         }
+
+        .footer-links-container ul{
+            flex-direction: column;
+        }
+
  
     }
 
-    @media screen and (min-device-width:770px){
-        .services-card-container{
-            justify-content:space-between;
-        }   
+    @media screen and (max-device-width:770px){
+        .emoji{
+            display: none;
+        }
     }
+        
+    
+
 
 
 
@@ -112,7 +165,7 @@ body{
         
     .hero-container {
         margin-top: 100px;
-        padding: 0 3% 0 3%;
+        padding: 0 10% 0 10%;
         display: flex;
         flex-direction: row;
 
@@ -140,15 +193,8 @@ body{
         max-height: 100%;
     }
 
-    .hero-title{
-        font-size: 60px;
-        font-weight: 700;
-        font-style: normal;
-    }
     .hero-text{
-        font-size: 20px;
-        line-height: 30px;
-        font-weight: 400;
+        color: #6B708D;
         margin-top: 30px;
         margin-bottom: 40px;
     }
@@ -158,7 +204,6 @@ body{
     }
 
     .hero-card{
-
         position: relative;
     }
     .hero-card-top{
@@ -183,9 +228,10 @@ body{
 
     .client-container{
         margin-top: 163px;
-        padding: 0 3% 0 3%;
+        padding: 0 10% 0 10%;
         justify-content: space-between;
         flex-wrap: wrap;
+        filter: contrast(0%);
     }
 
 
@@ -197,9 +243,9 @@ body{
         background-repeat: no-repeat;
         background-position: center;
         margin-top: 100px;
-
-
-    }
+        margin-left: 20px;
+        margin-right: 20px;
+      }
 
     .testimonial-top-row{
         justify-content: space-between;
@@ -209,9 +255,6 @@ body{
     }
     .testimonial-top-row h3{
         color:#F4F6FC;
-        font-size: 40px;
-        font-weight: 700;
-
     }
 
     .testimonial-mid-row{
@@ -247,18 +290,23 @@ body{
 
     .testimonial-profile-name{
         color: #A2D6F9;
+        margin-bottom: 5px;
     }
 
 
 /* ---------------- SERVICES SECTION-------------- */
     .services-container{
-
         margin:  100px 0 100px 0;
-        padding: 0 3% 0 3%;
+        padding: 0 10% 0 10%;
     }
 
-    .services-card-container{
-    }    
+    .services-title-container{
+        margin-bottom: 70px;
+    }
+
+    .services-text{
+        color: #6B708D;
+    }
         
     .services-card{
         background-color: white;
@@ -294,6 +342,9 @@ body{
         margin: 5px 0 0 5px;
 
     }
+    .services-card a{
+        text-decoration: none;
+    }
 
 
 
@@ -301,7 +352,7 @@ body{
 
     .cti-container{
         background-color: #FFC600;
-        height: 300px;
+        margin: 0 20px 0 20px   ;
     }
 
     .cti-email-input{
@@ -309,61 +360,139 @@ body{
         background-color: white;
         background-repeat: no-repeat;
         background-position: 3% 50%;
-        padding-left: 40px;
-        height: 40px;
+        padding-left: 60px;
+        height: 80px;
+        width: 37vw;
         border: none;
+        margin-bottom: 130px;
     }
 
     .cti-contact-container{
         margin-top: 30px;
     }
     .cti-title{
-        margin-top: 70px;
+        margin-top: 130px;
         margin-bottom: 20px;
     
+    }
+
+    .cti-subtitle{
+        margin-bottom: 50px;
     }
 
     .cti-btn{
         margin-left: 20px;
         border: none;
-        width: 100px;
+        width: 200px;
+        height: 80px;
+
 
         background: linear-gradient(225deg, rgb(255, 198, 0), #FFC600);
         box-shadow: 
         2px 2px 10px rgba(0, 0, 0, 0.18),
         -2px -2px 10px rgba(0, 0, 0, 0.18);
         font-weight: 500;
-    
         border-radius: 10px;
-    
-
- 
     }
 
 /* ----------------TESTIMONIAL SECTION-------------- */
     footer{
-        padding: 20px 20px 20px 20px;
+        padding: 20px 30px 50px 30px;
+        margin-top: 140px;
+        bottom: 0;
+        width: 95%;
+ 
     }
     .footer-container{
         justify-content: space-between;
-        margin-top: 100px;
+
     }
     .footer-logo img{
-        margin-bottom: 20px;
+        margin-bottom: 30px;
+        height: 30px;
+        width: 100px;
     }
     .footer-logo address{  
         line-height: 1.5rem;
+        color: #6B708D;
     }
+
     .footer-links-container{
         align-self: flex-end;
     }
     .footer-links-container ul{
-        gap: 30px 10px;
+
         flex-wrap: wrap;
-        width: 250px;
+        width: 450px;
         list-style-type: none;
+        color: #6B708D;
+    }
+
+    .footer-links-container ul li a{
+        text-decoration: none;
     }
 
     .footer-links{
         margin: 0 5px 0 5px;
+    }
+
+
+    /* -------------------------------------------------------------------------------------------------- */
+    /* ------------------------------------------FORM STYLE---------------------------------------------- */
+    /* -------------------------------------------------------------------------------------------------- */
+
+
+    .form-section{
+        padding: 0 8% 0 8% ;
+        margin-top: 146px;
+    }
+
+    .form-section h1{
+        margin-bottom: 80px;
+    }
+
+    .form-container label{
+        margin-bottom: 10px;
+        color: #6B708D;
+    }
+    .form-container input{
+        margin-bottom: 40px;
+        height: 70px;
+        border: none;        
+        background-color: rgba(107, 112, 141, 10%);
+        padding-left: 3%;
+
+    }
+    .form-container textarea{
+        margin-bottom: 40px;
+        padding: 1rem 1rem;
+        border: none;
+        background-color: rgba(107, 112, 141, 10%);
+    }
+    .mid-container{
+        width: 99%;
+        justify-content: space-between;
+
+    }
+
+    .phone-container{
+        width: 45%;
+    }
+    .email-container{
+        width: 45%;
+    }
+
+    #email-input{
+        width: 100%;   
+    }
+
+
+    #phone-input{
+        width: 100%;
+    }
+
+    
+    .submit-btn{
+        height: 80px;
+        width: 100%;
     }

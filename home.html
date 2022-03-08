@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css" />
-    <title>Document</title>
+    <title>Home</title>
     <style></style>
 </head>
 <body>
@@ -13,9 +13,9 @@
     <header class="header-container  flex-row">
         <div class="header-logo"><img src="assets/images/circle.svg" alt="circle-header-logo"></div>
         <nav class="flex-row">
-            <a href="" class="header-link" >Home</a>
+            <a href="home.html" class="header-link" >Home</a>
             <a href="" class="header-link" >Projects</a>
-            <a href="" class="header-link" >Services</a>
+            <a href="services.html" class="header-link" >Services</a>
         </nav>
         <button class="header-btn btn">Contact Us</button>
     </header>
@@ -24,8 +24,8 @@
         <div class="hero-container">
             <div class="hero-left" >
                 <div class="hl-top-container flex-column">
-                    <h2 class="hero-title">Empower Your Business With Stunning Design!</h2>
-                    <p class="hero-text">Circle is a digital design and development studio.<br>We design and develop astonishing websites<br> and mobile apps.</p>
+                    <h1 class="xlarge-text">Empower Your Business With Stunning Design!</h1>
+                    <p class="hero-text medium-text">Circle is a digital design and development studio.<br>We design and develop astonishing websites<br> and mobile apps.</p>
                 </div>
 
                 <div class="hl-bot-container flex-row">
@@ -38,7 +38,7 @@
             <div class="hero-rigth">
                 <div class="hero-img-container">
                     <img src="assets/images/hero-image.png" class="hero-img" alt="happy freelancer with yellow background">
-                    <img src="assets/images/card-1.png" class="hero-card-top hero-card"alt="">
+                    <img src="assets/images/card-1.svg" class="hero-card-top hero-card"alt="">
                     <img src="assets/images/card-2.png" class="hero-card-bot hero-card" alt="">
                 </div>
             </div>
@@ -64,9 +64,9 @@
 
         <div class="testimonial-container flex-column" >
 
-            <div class="testimonial-top-row flex-row">
+            <div class="testimonial-top-row flex-row ">
                 <img src="assets/images/memoji-1.png" class="emoji" alt="blonde emoji">
-                <h3>Hear What Our Clients Have to Say</h3>
+                <h3 class="large-text">Hear What Our Clients Have to Say</h3>
                 <img src="assets/images/memoji-2.png" class="emoji" alt="cap emoji">
             </div>
 
@@ -81,8 +81,8 @@
                 <div class="testiominal-user-container flex-row">
                     <img src="assets/images/profile.png" class="testimonial-profile-img" alt="">
                     <div>
-                        <p class="testimonial-profile-name">Kristin Watson</p>
-                        <p class="testimonial-profile-job">Booking.com</p>
+                        <p class="testimonial-profile-name small-text">Kristin Watson</p>
+                        <p class="testimonial-profile-job xsmall-text">Booking.com</p>
                     </div>
                 </div>
                 <img src="assets/images/memoji-4.png" class="emoji" alt="emoji playing party horn">
@@ -91,24 +91,24 @@
         </div>
 
         <div class="services-container flex-column">
-            <div class="services-title-container"><h3>Our Services</h3></div>
+            <div class="services-title-container"><h3 class="large-text">Our Services</h2></div>
             <div class="services-card-container flex-row" >
                 <div class="services-card flex-column">
                     <div><img src="assets/images/1.svg" alt="la punta de la cosa que pinta"></div>
-                    <h5>User Interface Design</h5>
-                    <p>Circle provides you with a stunning user interface design that is accessible to everyone.</p>
+                    <p class="largeMedium-text">User Interface Design</p>
+                    <p class="medium-text services-text">Circle provides you with a stunning user interface design that is accessible to everyone.</p>
                     <a href="#">Learn more</a>
                 </div>
                 <div class="services-card flex-column">
                     <div><img src="assets/images/2.svg" alt="la punta de la cosa que pinta"></div>
-                    <h5>User Interface Design</h5>
-                    <p>Circle provides you with a stunning user interface design that is accessible to everyone.</p>
+                    <p class="largeMedium-text">User Interface Design</p>
+                    <p class="medium-text services-text">Circle provides you with a stunning user interface design that is accessible to everyone.</p>
                     <a href="#">Learn more</a>
                 </div>
                 <div class="services-card flex-column">
                     <div><img src="assets/images/3.svg" alt="la punta de la cosa que pinta"></div>
-                    <h5>User Interface Design</h5>
-                    <p>Circle provides you with a stunning user interface design that is accessible to everyone.</p>
+                    <p class="largeMedium-text">User Interface Design</p>
+                    <p class="medium-text services-text">Circle provides you with a stunning user interface design that is accessible to everyone.</p>
                     <a href="#">Learn more</a>
                 </div>
             </div>
@@ -116,8 +116,8 @@
 
         <div class="cti-container">
             <div class="cti-title-container content-toCenter flex-column">
-                <h3 class="cti-title">Do you have any questions?</h3>
-                <p class="cti-subtitle">Let us help you!</p>
+                <h3 class="cti-title large-text ">Do you have any questions?</h3>
+                <p class="cti-subtitle medium-text">Let us help you!</p>
             </div>
 
             <div class="cti-contact-container  flex-row content-toCenter">
@@ -127,9 +127,7 @@
                 <button class="cti-btn">Suscribe</button>
  
             </div>
-   
         </div>
-
     </div>
 
     <footer>
@@ -140,13 +138,13 @@
             </div>
             <div class="footer-links-container">
                 <ul class="flex-row">
-                    <li class="footer-links">Team</li>
-                    <li class="footer-links">Services</li>
-                    <li class="footer-links">About Us</li>
+                    <li class="footer-links"><a href="">Team</a></li>
+                    <li class="footer-links"><a href="">Services</a></li>
+                    <li class="footer-links"><a href="">About Us</a></li>
                     
-                    <li class="footer-links">Press</li>
-                    <li class="footer-links">Projects</li>
-                    <li class="footer-links">Privacy Policy</li>
+                    <li class="footer-links"><a href=""> Press</a></li>
+                    <li class="footer-links"><a href="">Projects</a></li>
+                    <li class="footer-links"><a href="">Privacy Policy</a></li>
                 </ul>
             </div>
         </section>
