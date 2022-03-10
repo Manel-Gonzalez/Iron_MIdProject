@@ -43,7 +43,7 @@ body{
 .flex-row{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+
 }
 .flex-column{
     display: flex;
@@ -120,7 +120,7 @@ body{
         padding-right: 2%;
     }
 
-    @media screen and (min-device-width:767px){
+    @media screen and (min-device-width:768px){
         .services-card-container{
             justify-content:space-between;
         }   
@@ -128,6 +128,16 @@ body{
         .footer-links-container ul {
             gap: 60px 106px; 
         }
+        .services-card{
+            background-color: white;
+            width: 20vw;
+            padding: 40px 30px 30px 30px;
+            margin-left: 8px;
+        }
+        .services-card:first-child{
+            margin-left: 0px;
+        }
+    
     }
     @media screen and (max-device-width:468px) {
         .header-container{
@@ -154,10 +164,42 @@ body{
  
     }
 
-    @media screen and (max-device-width:770px){
+    @media screen and (max-device-width:767px){
         .emoji{
             display: none;
         }
+
+        .services-title-container{
+            text-align: center;
+        }
+        .services-card-container{
+            flex-wrap: wrap;
+            margin: auto;
+            justify-content: center;
+        }
+
+        .services-card{
+            background-color: white;
+            width: 200px;
+            padding: 40px 30px 30px 30px;
+            margin: 20px;
+
+
+        }
+        .projectsContainer{
+            text-align: center;
+        }
+
+        .projects-container{
+            flex-wrap: wrap;
+            margin: auto;
+
+        }
+        .project-card{
+            justify-content: center;
+            margin: 20px 20px;
+        }
+
     }
         
     
@@ -348,15 +390,6 @@ html{
         color: #6B708D;
     }
         
-    .services-card{
-        background-color: white;
-        width: 20vw;
-        padding: 40px 30px 30px 30px;
-        margin-left: 8px;
-    }
-    .services-card:first-child{
-        margin-left: 0px;
-    }
 
 
     .services-card div{
