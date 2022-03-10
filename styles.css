@@ -151,12 +151,13 @@ body{
         .hero-container{
             flex-wrap: wrap;
         }
-        .hero-rigth{
+/*         .hero-rigth{
             width: 400px;
-        }
+        } */
 
         .footer-links-container ul{
             flex-direction: column;
+            width: 450px;
         }
         .header-container nav{
             flex-direction: column;
@@ -456,7 +457,7 @@ html{
     .cti-btn{
         margin-left: 20px;
         border: none;
-        width: 200px;
+/*         width: 200px; */
         height: 80px;
 
 
@@ -496,7 +497,6 @@ html{
     .footer-links-container ul{
 
         flex-wrap: wrap;
-        width: 450px;
         list-style-type: none;
         color: #6B708D;
     }
