@@ -7,8 +7,8 @@ const renderDetails = async () => {
     
     const template = `
     <article class="post-container">
-        <h1>${post.title}</h1>
-        <div class="flex-row">
+        <h1 class="xlarge-text">${post.title}</h1>
+        <div class="subtitle-row flex-row">
             <p>${post.description}</p>
             <p><b>Completed on</b> June 22, 2021</p>
         </div>
