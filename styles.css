@@ -94,6 +94,7 @@ body{
 
     .header-container{
         justify-content: space-between;
+        flex-wrap: wrap;
         align-items: flex-end;
         padding: 70px 30px 0px 30px;
         height: 40px;
@@ -123,13 +124,15 @@ body{
         .services-card-container{
             justify-content:space-between;
         }   
+
         .footer-links-container ul {
             gap: 60px 106px; 
         }
     }
     @media screen and (max-device-width:468px) {
         .header-container{
-            flex-wrap: wrap;
+
+            flex-direction: column;
         }
         header nav{
             flex-direction: column;
@@ -145,7 +148,9 @@ body{
         .footer-links-container ul{
             flex-direction: column;
         }
-
+        .header-container nav{
+            flex-direction: column;
+        }
  
     }
 
@@ -157,7 +162,9 @@ body{
         
     
 
-
+html{
+    width: 100%;
+}
 
 
 /* ----------------HERO SECTION-------------- */
@@ -186,6 +193,7 @@ body{
 
     .hero-img-container{
         position: relative;
+        margin-top: 50px;
     }
 
     .hero-img{
@@ -208,18 +216,18 @@ body{
     }
     .hero-card-top{
         position: absolute;
-        background-color: transparent;
         top: 0;
-        width: 60%;
+        width: 33%;
         left: 0;
+        
 
     }
     .hero-card-bot{
         position: absolute;
-        background-color: transparent;
+
         bottom: 0;
         right: 0;
-        width: 60%;;
+        width: 33%;;
 
 
     }
@@ -233,8 +241,40 @@ body{
         flex-wrap: wrap;
         filter: contrast(0%);
     }
+/* ----------------PROJECTS SECTION-------------- */
 
+.projectsContainer{
+    padding: 0 10% 0 10%;
+    margin-top: 200px;
+}
+.projects-container{
+    justify-content: space-between;
+    margin-top: 23px;
+}
 
+.projectImg{    
+    width: 100%;
+    height: 200px;
+}
+.project-card{
+    background-color: white;
+    width: 300px;
+}
+.card-text-container{
+    margin: 0px 10px 10px 30px;
+    
+}.project-card-title{
+    margin:30px 0 10px 0;
+}
+.project-description{
+    margin-bottom: 54px;
+    color:#6B708D;
+}
+.project-link{
+    margin-bottom: 30px;
+    text-decoration: none;
+    
+}
 /* ----------------TESTIMONIAL SECTION-------------- */
     .testimonial-container{
         background-color: #292E47;
@@ -496,3 +536,23 @@ body{
         height: 80px;
         width: 100%;
     }
+
+
+/* -------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------PROJECTS STYLE---------------------------------------------- */
+/* -------------------------------------------------------------------------------------------------- */
+
+.projects{
+    padding: 0 2% 0 2%;
+}
+
+.post-container{
+
+    margin: 140px auto;
+    width: 79%;
+}
+
+.project-Img{
+    width: 100%;
+    height: 444px;
+}
