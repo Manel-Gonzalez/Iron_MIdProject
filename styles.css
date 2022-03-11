@@ -159,9 +159,9 @@ body{
         .hero-container{
             flex-wrap: wrap;
         }
-/*         .hero-rigth{
-            width: 400px;
-        } */
+        .btn{
+            width: 25vw;
+        }
 
         .footer-links-container ul{
             flex-direction: column;
