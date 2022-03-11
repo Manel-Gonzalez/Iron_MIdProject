@@ -11,19 +11,27 @@ body{
     background-color: #F4F6FC;
 }
 
+
 .btn{
-
-    background: linear-gradient(225deg, #F4F6FC, #F4F6FC);
+    text-decoration: none;
+    background: linear-gradient(225deg, #072AC8
+    , #072AC8
+    );
     box-shadow: 
-    2px 2px 24px rgba(0, 0, 0, 0.08),
-    -2px -2px 24px rgba(0, 0, 0, 0.08);
+    2px 2px 24px rgba(0, 0, 0, 0.2),
+    -2px -2px 24px rgba(0, 0, 0, 0.2);
     font-weight: 500;
-
+    color: white;
     border-radius: 10px;
     border: none;
 
     width: 150px;
-    height: 52px;
+    padding: 26px 0 26px 0;
+}
+.btn:focus{
+    box-shadow: inset 4px 4px 5px rgba(0, 0, 0, 0.25),
+    inset -4px -4px 5px rgba(0, 0, 0, 0.25); 
+    
 }
 
 .btn-secondary{
@@ -109,8 +117,8 @@ body{
     }
 
     .header-btn{
-        justify-content: center;
-        align-items: center;
+        text-align: center;
+        
 
     }
 
@@ -262,15 +270,18 @@ html{
         top: 0;
         width: 33%;
         left: 0;
+        border-radius: 30px;
+        box-shadow: 5px 5px 31px rgba(0, 0, 0, 0.5);
         
 
     }
     .hero-card-bot{
         position: absolute;
-
         bottom: 0;
         right: 0;
         width: 33%;;
+        border-radius: 30px;
+        box-shadow: 5px 5px 31px rgba(0, 0, 0, 0.5);
 
 
     }
@@ -302,6 +313,7 @@ html{
 .project-card{
     background-color: white;
     width: 300px;
+    box-shadow: 5px 5px 31px rgba(0, 0, 0, 0.5);
 }
 .card-text-container{
     margin: 0px 10px 10px 30px;
@@ -392,7 +404,9 @@ html{
         color: #6B708D;
     }
         
-
+    .services-card{
+        box-shadow: 5px 5px 31px rgba(0, 0, 0, 0.5);
+    }
 
     .services-card div{
         width: 45px;
@@ -458,7 +472,7 @@ html{
     .cti-btn{
         margin-left: 20px;
         border: none;
-/*         width: 200px; */
+        width: 20%;
         height: 80px;
 
 
@@ -566,9 +580,21 @@ html{
     }
 
     
-    .submit-btn{
+    #submit-btn{
         height: 80px;
         width: 100%;
+        color: white;
+        background: #072AC8;
+        box-shadow: 
+        4px 4px 5px rgba(0, 0, 0, 0.25),
+        -4px -4px 5px rgba(0, 0, 0, 0.25);
+
+    }
+
+
+    #submit-btn:focus{
+        box-shadow: inset 4px 4px 5px rgba(0, 0, 0, 0.25),
+        inset -4px -4px 5px rgba(0, 0, 0, 0.25); 
     }
 
 
@@ -590,6 +616,16 @@ html{
     width: 100%;
     height: 450px;
     margin-bottom: 80px;
+
+    box-shadow:
+    5px 5px 15px 1px #FF8080,
+    -9px 5px 15px 1px #8E5CFF,
+    -7px -5px 15px 1px #8E5CFF,
+     12px -5px 15px 1px #80C7FF, 
+     12px 10px 15px 1px #E488FF, 
+     -10px 10px 15px 1px #FF616B, 
+     -10px -7px 27px 1px #8E5CFF,
+      0px 0px 9px 5px #000000;
 }
 .post-container .h1{
     font-weight: bold;
