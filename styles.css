@@ -25,7 +25,7 @@ body{
     border-radius: 10px;
     border: none;
 
-    width: 150px;
+    width: 15vw;
     padding: 26px 0 26px 0;
 }
 .btn:focus{
@@ -165,7 +165,6 @@ body{
 
         .footer-links-container ul{
             flex-direction: column;
-            width: 450px;
         }
         .header-container nav{
             flex-direction: column;
